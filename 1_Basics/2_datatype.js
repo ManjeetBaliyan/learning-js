@@ -30,7 +30,12 @@ let married=false
 let wifeName
 let children=null
 
-console.log(typeof(age)) // number
+// Two way to identify the datatype of any variable.
+
+//Normal way
+console.log(typeof age) // number
+
+// Create as a Method
 console.log(typeof(null))// object bcz null is object.
 console.log(typeof(undefined))//undefined 
 
