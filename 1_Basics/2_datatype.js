@@ -30,6 +30,12 @@ let married=false
 let wifeName
 let children=null
 
+// Use of Symbol
+const id= Symbol("123")
+const anotherId = Symbol("123") // We pass the same value in both the variable but they are different to each other.
+
+console.log(id=== anotherId)
+
 // Two way to identify the datatype of any variable.
 
 //Normal way
@@ -38,4 +44,6 @@ console.log(typeof age) // number
 // Create as a Method
 console.log(typeof(null))// object bcz null is object.
 console.log(typeof(undefined))//undefined 
+
+// 
 
