@@ -1,4 +1,4 @@
-"use strict"  // It's is used to treat all the JS code as new version.
+"use strict"; // It's is used to treat all the JS code as new version.
 
 /* 
 (A)---> alert("hello") or alert (3+3)  Alert doesn't work here bcz we use node js not a browser. If we use a 
@@ -22,28 +22,27 @@
         null is a object.
 */
 
-console.log(4  +     4)
-console.log("Chaudhary sahab")
-let name="Manjeet"
-let age=21
-let married=false
-let wifeName
-let children=null
+console.log(4 + 4);
+console.log("Chaudhary sahab");
+let name = "James";
+let age = 21;
+let married = false;
+let wifeName;
+let children = null;
 
 // Use of Symbol
-const id= Symbol("123")
-const anotherId = Symbol("123") // We pass the same value in both the variable but they are different to each other.
+const id = Symbol("123");
+const anotherId = Symbol("123"); // We pass the same value in both the variable but they are different to each other.
 
-console.log(id=== anotherId)
+console.log(id === anotherId);
 
 // Two way to identify the datatype of any variable.
 
 //Normal way
-console.log(typeof age) // number
+console.log(typeof age); // number
 
 // Create as a Method
-console.log(typeof(null))// object bcz null is object.
-console.log(typeof(undefined))//undefined 
+console.log(typeof null); // object bcz null is object.
+console.log(typeof undefined); //undefined
 
-// 
-
+//
