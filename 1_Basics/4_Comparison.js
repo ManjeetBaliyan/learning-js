@@ -6,9 +6,9 @@
 // -----------------------------------------------Basics Compresion (Compare with same datatype)---------------------------------------------
 console.log(3>=10)
 console.log(3>10)
-console.log(3<=10)
+console.log("Mannu"<="Mannu")
 console.log(3<10)
-console.log(3!=10)
+console.log("MANJEET"!="BALIYAN")
 console.log(3==10)
 
 console.log(" ")
@@ -39,7 +39,7 @@ console.log(" ")
 
 //-------------------------------------------Compare with undefined--------------------------------------------------------------------------
 
-// Same condition as null but it's always return false. and all the operators wor similarlly
+// Same condition as null but it's always return false. and all the operators work similarlly
 console.log(undefined>0)
 console.log(undefined>=0)
 console.log(undefined<=0)
@@ -47,7 +47,7 @@ console.log(undefined<0)
 console.log(undefined==0)
 
 console.log(" ")
-//--------------------------------------------(===)------------------------------------------------------------------------------------------
+//--------------------------------------------STRICT CHECK (===)----------------------------------------------------------------------------
  // It compare both (datatype and value), where (==) compare only value.
 
  console.log("34"=== 34)
