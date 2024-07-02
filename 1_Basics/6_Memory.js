@@ -7,22 +7,22 @@
 */
 
 //---------------------------------------     STACK   ----------------------------------------------------------------------------------
-let myName="Manjeet Baliyan"
-let anotherName= myName // value is copied.
-anotherName="Mannu don"  // copied value changed.
+let myName = "James Bond";
+let anotherName = myName; // value is copied.
+anotherName = "Thomas"; // copied value changed.
 
 console.log(myName);
-console.log(anotherName); 
+console.log(anotherName);
 
 //-------------------------------------------      HEAP       ----------------------------------------------------------------------------
 
-let userOne ={
-    email: "manjeetbaliyan21@gmail.com",
-    upi: "manjeet@ybl"
-}
+let userOne = {
+  email: "manjeetchaudhary992@gmail.com",
+  upi: "manjeet@ybl",
+};
 
-let userTwo = userOne      // Both refered the same address in the heap area and original value return not copied.
-userTwo.email ="manjii21@gmail.com" // Original vaue changed.
+let userTwo = userOne; // Both refered the same address in the heap area and original value return not copied.
+userTwo.email = "manjii21@gmail.com"; // Original vaue changed.
 
-console.log(userOne.email)
-console.log(userTwo.email) // Both are same bcz refer to same address.
+console.log(userOne.email);
+console.log(userTwo.email); // Both are same bcz refer to same address.
