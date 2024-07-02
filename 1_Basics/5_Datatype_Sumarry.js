@@ -11,9 +11,7 @@
        Return type of all NON PRIMITIVE is always OBJECT.
 */
 
-
 //------------------------------------------------------------------------------------------------------------------------------------------
-
 
 /* 
     JavaScript is a dynamically typed language. This means that variable types are determined at runtime, and you do not need to explicitly declare the type of a variable before using it. You can assign different types of values to a variable during its lifetime.
@@ -32,34 +30,32 @@
     JavaScript's dynamic typing allows for more flexibility but can lead to potential runtime errors if not handled carefully. Static typing, on the other hand, provides better type safety at the cost of some initial verbosity and strictness.
 */
 
-
 // ARRAY
-const heros = ["Chota bheem", "Saktiman"," Ben10"]
+const heros = ["Chota bheem", "Saktiman", " Ben10"];
 
 // Objects
 {
-    // We can store with or without a variable.
-    name: "Manjeet"
-    age: 22
-    isMarried: false
+  // We can store with or without a variable.
+  name: "James";
+  age: 22;
+  isMarried: false;
 }
 // By storing into a variable.
 let details = {
-    mother: "monika",
-    father: "yogesh",
-    siater: "tamanna",
-}
+  mother: "Jeniffer",
+  father: "Harry",
+  siater: "Oliviya",
+};
 
-// Function 
+// Function
 
-// There are many ways to declare the function, 
+// There are many ways to declare the function,
 // we use here when we treat a function as a variable.
 
-const myFunction = function (){
-    console.log("hello Duniya")
-}
+const myFunction = function () {
+  console.log("hello Duniya");
+};
 
-
-console.log(typeof myFunction) // Its type is known as Object function.
+console.log(typeof myFunction); // Its type is known as Object function.
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
