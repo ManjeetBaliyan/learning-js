@@ -24,6 +24,7 @@ console.log(myArr);
 myArr.shift(); //It's is used to remove the first element of the array.
 console.log(myArr);
 
+
 console.log(myArr.includes(5)); // Return asking value is present in the array or not.
 
 console.log(myArr.indexOf(4)); // Return index value of 4.
