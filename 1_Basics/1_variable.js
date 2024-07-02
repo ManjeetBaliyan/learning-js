@@ -19,16 +19,16 @@
 
 */
 
-const accountNum=12345;
-let accountHolder="MANJEET BALIYAN"
-var accountPassword="123456789"
-accountCity="Delhi"
+const accountNum = 12345;
+let accountHolder = "JAMES BOND"
+var accountPassword = "123456789"
+accountCity = "Delhi"
 let accountNominne
 
-accountHolder="Mannu";
-accountCity="Pune"
-accountPassword="987654321"
+accountHolder = "TOM";
+accountCity = "Pune"
+accountPassword = "987654321"
 
 console.log(accountNum)  // It's used to print single data
-console.table([accountHolder,accountCity,accountPassword,accountNominne]) //It's used to print multiple output at the same time.
+console.table([accountHolder, accountCity, accountPassword, accountNominne]) //It's used to print multiple output at the same time.
 
