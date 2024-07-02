@@ -21,6 +21,6 @@ console.log(Array.from({name : "Akki"})) // it can't make array from a object di
 
 // Making array from many others variables.
 let score1 = 1234
-let score2 = 321
+let score2 = 322
 let score3 =987
 console.log(Array.of(score1,score2,score3))
