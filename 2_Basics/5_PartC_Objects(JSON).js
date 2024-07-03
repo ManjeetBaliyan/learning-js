@@ -6,7 +6,7 @@
 
 // Object form
 {
-    "name"; "manjeet",
+    "name": "manjeet",
     "course":"JAVASCRIPT",
     "fees": 2100
 }
