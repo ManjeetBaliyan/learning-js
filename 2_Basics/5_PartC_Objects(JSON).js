@@ -6,9 +6,9 @@
 
 // Object form
 {
-    "name": "manjeet",
-    "course":"JAVASCRIPT",
-    "fees": 2100
+    //"name": "manjeet",
+    //"course":"JAVASCRIPT",
+    //"fees": 2100
 }
 
 // Array form 
