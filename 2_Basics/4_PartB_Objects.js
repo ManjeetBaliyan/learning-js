@@ -63,8 +63,8 @@ console.log(snapUser.hasOwnProperty("id"))
 const course ={
   coursename: "JAVASCRIPT",
   price:1200,
-  cousreteacher:"Rammu"
+  courseteacher:"Rammu"
 }
 
-const{cousreteacher:teacher}=course //Here we have change the name of key. Where see { } smj jana de structure hua hai.
+const{courseteacher:teacher}=course //Here we have change the name of key. Where see { } smj jana de structure hua hai.
 console.log(teacher)
