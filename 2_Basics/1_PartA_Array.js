@@ -10,7 +10,7 @@ console.log(myArr[3]);
 console.log(myarray[3]);
 console.log(superhero[2]);
 
-//___________________________________   METHODS IN ARRAY  __________________________________________________________________________________
+//___________________________________   METHODS IN ARRAY ____________________________________
 
 myArr.push(8); // Add element in the array.
 console.log(myArr);
