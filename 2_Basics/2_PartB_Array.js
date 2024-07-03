@@ -2,10 +2,10 @@ const mc_heroes = ["thor", "ironman", "Spiderman"];
 const dc_heroes = ["superman", "batman", "joker"];
 
 mc_heroes.push(dc_heroes);
-console.log(mc_heroes); // Here array can't merge. First array take the second array as an element bcz in JAVASCRIPT array take every thing
+console.log(mc_heroes); // Here array can't merge. First array take the second array as an element bcz in JAVASCRIPT array take every thing so it take 2nd array as an element.
 console.log(mc_heroes[3][2]); //as an element.
 
-// Combine two string by using spread[... arr1, ...arr2, ....................... , ...arrN] 
+// Combine two ARRAY by using spread[... arr1, ...arr2, ....................... , ...arrN] method.
 const All_heroes =[...mc_heroes, ...dc_heroes]
 console.log(All_heroes)
 
