@@ -65,6 +65,7 @@ function customerItemsPrice2(val1, val2, ...price1) {
 console.log(customerItemsPrice2(200, 500, 432, 6322));
 // Here first two entries goes into val1 and val2 remaining all the values goes into price1. And it return only price1 values.If we want val1 and val2 value then we use console.log(val1,val2) we can only print that value not be return with price1.
 
+
 //-----------------------------PASS OBJECTS INSIDE A FUNCTION    --------------------------
 // Always use "anyobject" as parameter and argument is "name" of object.
 const items = {
@@ -106,4 +107,24 @@ function returnValue1(getArray) {
 }
 console.log(returnValue1([200, 500, 1000, 483]));
 
-//------------------- HOSTING OF A FUNCTION ----------
+/*------------------- HOSTING OF A FUNCTION ------------------------------------------------
+   
+  ===> Hosting stand for when a object hold the function we can't declare or call the     
+       function before declaration. but when a function is declare normally we can call before it's declaration
+*/
+
+// Normally function is declare.
+
+console.log(add_one(5));
+
+function add_one(num) {
+  return num + 1;
+}
+
+// function is hold by a object.
+
+console.log(add_two(6)); // Show error
+
+const add_two = function (num) {
+  return num + 2;
+};
