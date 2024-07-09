@@ -1,5 +1,9 @@
 //-------------------------   FOR EACH LOOP  ------------------------------------------------
 
+// For each loop take call back inside it.
+// For each loop can't return.
+// So we use filter in for each loop for return the value.
+
 const lng=["js","java","cpp","python","ruby"]
 lng.forEach( function (element) {
     console.log(`language is ${element}`)
