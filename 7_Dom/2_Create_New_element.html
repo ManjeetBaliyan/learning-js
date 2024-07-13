@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHAI WITH CODE</title>
+  </head>
+
+  <body></body>
+  <script>
+    document.createElement("div"); // create any element by passing it's name.
+    const div = document.createElement("div"); // Store inside a variable.
+
+    <!--That created Div is present only in memory.So below instruction is not showing on the webpage-->
+
+    console.log(div);
+    // Add properties inside this element.
+    div.className = "main";
+    div.id = "myId";
+    div.style.backgroundColor = "green";
+    div.style.padding = "15px";
+
+    //Here we can add text by two method.
+
+    //1.
+    div.innerHTML = "CHAI WITH CODE";
+
+    //2.
+    const addText = document.createTextNode("Chai with Manjeet")
+    div.appendChild(addText)
+
+     
+    document.body.appendChild(div) //Attaching of that div with web page
+  </script>
+</html>
