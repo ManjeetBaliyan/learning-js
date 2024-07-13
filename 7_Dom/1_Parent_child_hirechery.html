@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | CHAI WITH CODE</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+
+    // Parent to children traversal.
+
+    const parent = document.querySelector('.parent') // Select the parent element and achived it's all information.
+    console.log(parent) // Print all those value inside the parent variable.
+    console.log(parent.children) // It's give html collection of all children of this parent element which is approx similer to array not exact array.
+    console.log(parent.children[0])//Return monday. Now we can do anything with that value.
+    console.log(parent.children[0].innerHTML);
+
+    for (let i = 0; i < parent.children.length; i++) {
+        const element = parent.children[i];// Parent.children give the html collection.
+        console.log(parent.children[i].innerHTML)
+
+    }
+    parent.children[1].style.color = "pink"
+    console.log(parent.firstElementChild)
+    console.log(parent.lastElementChild)
+
+    // Children to parent.
+    const dayone = document.querySelector(".day")
+    console.log(dayone)// print the first day i.e. children 
+    console.log(dayone.parentElement)// print the Parent element.
+    console.log(dayone.nextElementSibling) // Print the next child.
+</script>
+
+</html>
