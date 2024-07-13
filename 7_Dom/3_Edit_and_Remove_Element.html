@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    function addlanguage(langName) {
+      const li = document.createElement("li"); // Create a li element.
+      li.innerHTML = `${langName}`; // add value inside the list element.
+      document.querySelector(".language").appendChild(li); // Select the class where we attached this function.Add link with web page by using appendChild.
+    }
+    addlanguage("Python");
+    addlanguage("Java");
+    addlanguage("C++");
+    addlanguage("Ruby");
+
+    // In Above method it traverse the complete tree for adding the last element.So it's not a optimize methode.
+
+    // Optimize Way (Prefer)
+    function optimizeMethod(lang) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(lang));
+      document.querySelector(".language").appendChild(li);
+    }
+    optimizeMethod("Go language");
+
+    //-----------------------------------   EDIT   -----------------------------------------------
+    const thirdLang = document.querySelector("li:nth-child(3)"); //Select that element was edited.
+    // Way 1 But not optimize.
+    thirdLang.innerHTML = "TypeScript";
+
+    // Optimize Way
+    const SecondLang = document.querySelector("li:nth-child(2)");
+    const newlang = document.createElement("li");
+    newlang.textContent = "C#";
+    SecondLang.replaceWith(newlang);
+
+    //-----------------------------  REMOVE  ---------------------------------------------------
+    const removelang = document.querySelector("li:last-child");
+    removelang.remove();
+  </script>
+</html>
