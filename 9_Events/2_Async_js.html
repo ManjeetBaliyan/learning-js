@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHAI WITH CODE</h1>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("MANJEET");
+    },2000) // Time is always in millisecond so after 2sec, It print MANJEET.
+
+
+    // Give the referencr of the function
+    const sayName=function(){
+        console.log("Baliyan")
+    }
+    setTimeout(sayName,2000) // pass the function as the reference.
+
+    // Do task after sometime .(Let change the value of h1)
+    const change = function (){
+        document.querySelector('h1').innerHTML="Hello manjeet baliyan "
+    }
+    setTimeout(change,2000)
+</script>
+</html>
