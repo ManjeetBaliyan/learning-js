@@ -5,12 +5,12 @@ const promiseOne = new Promise(function (resolve, reject) {
         resolve()// To connect then() with the resolve.
     }, 2000)
 })
-
 // Consuption of promise. It execute when promise is sucessflly resolve.
 promiseOne.then(function () {
     console.log("Promise is completed ")
     // then() is directly connected with resolve parameter.
 })
+
 
 
 // Doesn't store Promise inside a variable.
@@ -31,7 +31,6 @@ const promiseThree = new Promise(function (resolve, reject) {
         resolve({ name: " Manjeet", Email: "mnajeohqdsh@21jhh" })// pass the object as the parameter inside the resolve().
     }, 2000)
 })
-
 promiseThree.then(function (user) {
     console.log(user)
 })
@@ -39,10 +38,11 @@ promiseThree.then(function (user) {
 
 
 // Using of reject and resolve both method.
-// Handel he error case. 
+// Return the desire input from the data.
+// Handel the error case. 
 const promiseFour = new Promise(function (resolve, reject) {
     setTimeout(function () {
-        let error = false
+        let error = true
         if (!error) {
             resolve({ name: "Manjeet Chaudhary", course: "Btech C.S.E" })
         }
@@ -51,8 +51,8 @@ const promiseFour = new Promise(function (resolve, reject) {
         }
     }, 2000)
 })
-// For resolve we use then().
-// For reject or error we use catch().
+// For resolve --> then().
+// For reject or error --> catch().
 promiseFour
 .then((user) => {
     console.log(user)
@@ -64,3 +64,5 @@ promiseFour
 .catch((error) => {
     console.log(error)
 })
+.finally(()=>console.log("Promise is done either reject or resolve."))
+// finally() always execute either promise execute or resolve
