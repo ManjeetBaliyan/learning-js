@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHAI WITH MANJEET</h1>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    // Print Manjeet after each 1 second.
+    //setInterval(function(){
+      //  console.log("Manjeet")
+    //},1000) 
+
+    // By passing the reference of the function
+    //const name = function (){
+      //  console.log("Baliyan")
+    //}
+    //setInterval(name,1000)
+
+    // Pass the third parameter inside the setInterval
+    const name1= function(say){
+        console.log(say,"Manjeet baliyan")
+    }
+    const changeId = setInterval(name1,1000,"Hi")
+
+    // Stop that process by button0o
+   document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeId)
+       console.log("stop")
+   }) 
+   // Start with button
+   document.querySelector('#start').addEventListener("click",function(){
+    setInterval(name1,1000,"hi")
+    console.log("Start")
+   })
+
+</script>
+</html>
