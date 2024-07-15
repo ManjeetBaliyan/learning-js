@@ -1,0 +1,119 @@
+/* Mainly jo events mai padhna hai :- 
+    1.type of event 
+    2.timestamp
+    3.defaultPrevented 
+    4.target 
+    5.toElement 
+    6.srcElement 
+    7.currentTarget 
+
+**Interview bases 
+    8.clientX ----> location of client on web page 
+    9.clientY
+    10.screenX 
+    11.screenY 
+    12.ofset 
+
+** Key used of keyboard. 
+    13. alt key 
+    14. ctrl key
+    15. shift key 
+    16. and all other key code.
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENTS</title>
+</head>
+
+<body style="background-color: #414141; color: aliceblue">
+    <div>
+        <ul id="images">
+            <li>
+                <img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop" />
+            </li>
+            <li>
+                <img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="" />
+            </li>
+            <li>
+                <img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="" />
+            </li>
+            <li>
+                <img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="" />
+            </li>
+            <li>
+                <img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="" />
+            </li>
+            <li>
+                <a style="color: aliceblue" href="https://google.com" id="google">Google</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<script>
+    // Avoid to inject the event inside the html body.It's not a fessible approach.
+
+    //This is good approach but it provide less features.
+    document.getElementById("river").onclick = function () {
+        alert("It's is a river image.");
+    };
+
+    // Best Approach using event Listener.
+    document.getElementById("owl").addEventListener("click", function () {
+        alert("Owl clicked");
+    });
+
+//-----------------  EVENT OBJECT  ----------------------------------------------------------
+
+
+
+/* ---------------------- EVENT PROPAGATION / BUBBLING MODE--------------------------
+        ==> When one event occur inside the another event and inside event(child event)  
+            occur first then parent event is known as Event Proporgation/ Bubbling.
+        ==> Write false at the end of the event.
+        ==> False is bydefault, if we write nothing then false considered.
+
+    ----------------------- EVENT CAPTURING MODE ----------------------------------------
+        ==> In this parent event occur first then child event i.e. top down approach.
+        ==> Write (True) at the end of the event.
+*/
+
+    document.getElementById("images").addEventListener("click",function (e) {
+            alert("Clicked on a url"); // Target Id = images.
+        },false // Event Bubbling
+    );
+
+    document.getElementById("owl").addEventListener("click",function (e) {
+            alert("Owl clicked"); // Target Id = Owl.
+        }, false);
+
+
+
+
+
+//---------------------------- IMAGE DISAPPEAR ON CLICKING ON IT --------------------------
+
+    document.querySelector('#images').addEventListener("click",function(e){
+        console.log(e.target.parentNode);
+        let removeimg=e.target.parentNode
+        removeimg.remove()
+    })
+    
+
+</script>
+
+</html>
