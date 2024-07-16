@@ -66,3 +66,19 @@ promiseFour
 })
 .finally(()=>console.log("Promise is done either reject or resolve."))
 // finally() always execute either promise execute or resolve
+
+
+/*---------------------------------------- FETCH ------------------------------------------------------------------------------
+
+    ==> Fetch create a special type of Queue in which more important task is store. When we apply the Fetch on any task it will 
+        always execute first.
+
+ */
+fetch('https://api.github.com/users/hiteshchoudhary') // Give the url of any API.
+.then((response) => {
+    return response.json()
+})
+.then((data) => {
+    console.log(data);
+})
+.catch((error) => console.log(error))
